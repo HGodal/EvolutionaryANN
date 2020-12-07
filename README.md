@@ -44,14 +44,12 @@ The program can also take one additional argument which defines the number of st
 
 > `python TrainingEnvironment.py 1000`
 
-![](gifs/launch.gif)
-
 ## Results
 
 **Note**: Due to the stochastic nature of evolutionary algorithms, results may wary between runs.
 
 ### Agent_500
-![](gifs/agent500.gif)
+![](gifs/agent_500.gif)
 
 Hyperparameters used in this gif:
 
@@ -74,7 +72,7 @@ Current average score: 489.65
 ```
 
 ### Agent_1000
-![](gifs/agent1000.gif)
+![](gifs/agent_1000.gif)
 
 Hyperparameters used in this gif:
 
@@ -99,7 +97,7 @@ Current average score: 1000.0
 ```
 
 ### Agent_5000
-![](gifs/agent5000.gif)
+![](gifs/agent_5000.gif)
 
 Hyperparameters used in this gif:
 - Population = 50

@@ -5,31 +5,30 @@ name: Python package
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ['3.8']
+        python-version: ["3.8"]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install pycodestyle pydocstyle
-    - name: Lint with pycodestyle
-      run: |
-        pycodestyle . 
-    - name: Lint with pydocstyle
-      run: |
-        pydocstyle . 
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pycodestyle pydocstyle
+      - name: Lint with pycodestyle
+        run: |
+          pycodestyle .
+      - name: Lint with pydocstyle
+        run: |
+          pydocstyle .
