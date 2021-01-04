@@ -1,11 +1,12 @@
-name: DAT540EANN
+name: dat540
 channels:
   - defaults
   - conda-forge
 dependencies:
-  - python=3.8.5
+  - autopep8
+  - python
   - gym
   - pylint
-  - pycodestyle
-  - pydocstyle
   - scikit-learn
+  - matplotlib
+

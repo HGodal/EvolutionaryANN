@@ -88,7 +88,7 @@ for i in range(generations):
     if np.mean(scoreList) >= env._max_episode_steps*acceptance_rate:
         print(" " * (population_size + 2), end="\r")
         print(f"\nSuccess in generation {i}!")
-        print(f"Current average score: {np.mean(scoreList)}")
+        print(f"Final average score: {np.mean(scoreList)}")
         np.set_printoptions(suppress=True)
         # Render best agent.
         functions.simulate_agent(
